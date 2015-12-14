@@ -1,0 +1,33 @@
+main page: 
+
+GET
+/data
+	request: {site_id: , locations: {countries: [] , state_provinces: [] }, types: [], 
+				exposures: [], zones: [], sub_zones: [] , time_interval: , start_date_time: , 
+				end_date_time: }
+	
+	response: {format: [], data: [{microsite_id: . timestamp: , temperature: }]
+	
+	
+	
+	
+
+-----------------------------------------------------------------------------------------
+
+
+admin page:	
+
+POST:
+/data
+	request: {date_format:  text_data: STRING_OF_THE_TEXT_FILE}	
+	response: header ok / not ok {msg: }
+	
+
+/sites
+	request: {country: , latitude: , longitude: , location_name: , state_province: }
+	response: header ok / not ok {msg: }
+	
+/sensors (microsites?)
+	request: {site_id: , biomimic: , zone: , sub_zone: , wave_exposure: , tide_height: }
+	response: header ok / not ok {msg: }
+	
